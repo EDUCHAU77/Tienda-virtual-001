@@ -1,0 +1,17 @@
+.userInfoContainer img{
+     width: 35px;
+     height: 35px;
+     border-radius: 100%;
+     object-fit: cover;
+}
+@media (max-width: 1024px){
+
+    .userInfoContainer img{
+        width: 25px;
+        height: 25px;
+        border-radius: 100%;
+        object-fit: cover;
+        margin-top: 8px;
+   }
+   
+}

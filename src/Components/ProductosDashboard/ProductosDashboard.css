@@ -1,0 +1,165 @@
+
+.table-container {
+    max-height: 50vh;  
+    overflow: auto;
+    margin-top: 1rem;
+}
+.table-container::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+ 
+    cursor: pointer;
+    background-color: transparent;
+   
+}
+ 
+  
+  .table-container::-webkit-scrollbar-thumb {
+    background-color: var(--color1); 
+    border-radius: 10px;
+    margin-top: 3rem;
+  }
+  
+.table {
+  width: 100%;
+
+  border-collapse: collapse;
+  table-layout: fixed;
+
+ 
+}
+
+.table th, .table td {
+    padding: 8px;
+    text-align: left;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    color: var(--text-color2);
+}
+.table  td {
+
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #dcd9d9;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--text-color2);
+    font-size: 14px;
+
+    
+   
+}
+.descripcion {
+    min-width: 30vh;
+}
+
+.table th {
+    background-color: #f2f2f2;
+    
+}
+
+.table tr:nth-child(even) {
+  
+}
+
+.table tr:hover {
+    background-color: #f2f2f28b;
+}
+
+.noResult {
+    display:flexbox;
+ 
+    
+ 
+   
+    width: 20rem;
+    height:10px ;
+  
+    border-radius: 7px;
+ 
+  
+    animation: gradientMove 1s linear infinite;
+   
+}
+
+.table img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 100%;
+ 
+}
+
+.filterText {
+    border: 1px solid var(--input);
+    border-radius: 4px;
+    padding: 10px 10px;
+    width: 30%;
+  
+}
+
+.deflex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.deFlexExport{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.pdf-button{
+   
+    border: none;
+   
+    color: red;
+    font-size: 19px;
+    cursor: pointer;
+}
+.excel-button{
+   
+
+    font-size: 19px;
+
+    border: none;
+    color:  green;
+    cursor: pointer;
+}
+/* Estilos para pantallas más pequeñas (por ejemplo, 768px o menos) */
+@media (max-width: 768px) {
+    .table {
+        width: auto; /* Restablece el ancho para adaptarse al contenido */
+    }
+
+    .table-container {
+        width: 100%; /* Ajusta el ancho del contenedor al 100% */
+        overflow-x: scroll; /* Habilita la barra de desplazamiento horizontal */
+        max-height: 100%;  
+    }
+    .filterText {
+      
+        width: 100%;
+      
+    }
+    .table th, .table td {
+        padding: 5px;
+        
+        font-size: 13px;
+    }
+    .table img {
+        width: 35px;
+        height: 35px;
+        object-fit: cover;
+        border-radius: 100%;
+        
+    }
+    .deFlexExport{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+}

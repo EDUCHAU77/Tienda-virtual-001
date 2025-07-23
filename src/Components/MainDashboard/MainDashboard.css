@@ -1,0 +1,68 @@
+.cantidades{
+    height: 100%;
+    width: 100%;
+   
+   
+    margin: auto;
+    display: grid;
+    grid-auto-rows: max-content;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 2rem;
+  
+
+    height: auto;
+    margin-bottom: 2rem;
+    
+   
+    border-radius: 7px;
+   
+    justify-content: space-between;
+   
+   
+}
+
+.loginDashboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 35%;
+    background-image: url(../../images/bglogin.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+@media (max-width: 1024px) {
+    .cantidades{
+
+     
+ 
+        margin-bottom: 2rem;
+        display: grid;
+       grid-auto-rows: max-content;
+       grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+       place-content: center;
+       align-items: center;
+       justify-content: center;
+       align-self: center;
+       align-content: center;
+       
+      gap: 1rem;
+       
+    }
+    
+}
+.permisoSin{
+    background-color: var(--blanco);
+    padding: 20px;
+    border-radius: 10px;
+   
+}
+@media (max-width: 724px){
+    .loginDashboard{
+     
+       
+        padding: 10px 5%;
+      
+    }
+}
